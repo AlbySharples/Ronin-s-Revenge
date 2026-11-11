@@ -1,0 +1,65 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Cinzel/static/Cinzel-ExtraBold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Cinzel/static/Cinzel-Bold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://PauseMenu.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 75
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 45
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.0431373, 0.0980392, 0.0117647, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.054902, 0.211765, 0.0470588, 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 45
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.176471, 0.0980392, 0.0196078, 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.517647, 0.4, 0.160784, 1 )
+
+[node name="PauseMenu" type="CanvasLayer"]
+script = ExtResource( 3 )
+
+[node name="Panel" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.313726 )
+
+[node name="Title" type="Label" parent="Panel"]
+margin_left = 807.0
+margin_top = 145.0
+margin_right = 1132.0
+margin_bottom = 247.0
+custom_fonts/font = SubResource( 1 )
+text = "PAUSED"
+
+[node name="Resume" type="Button" parent="Panel"]
+margin_left = 672.0
+margin_top = 320.0
+margin_right = 1264.0
+margin_bottom = 465.0
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+text = "RESUME"
+
+[node name="Quit" type="Button" parent="Panel"]
+margin_left = 672.0
+margin_top = 544.0
+margin_right = 1256.0
+margin_bottom = 722.0
+custom_fonts/font = SubResource( 5 )
+custom_styles/hover = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+text = "MAIN MENU"

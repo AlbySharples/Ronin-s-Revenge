@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/yellow_attack.mp3-59bd2b01ddb78ec4953b1e9887da810f.mp3str"
+
+[deps]
+
+source_file="res://Sounds/yellow_attack.mp3"
+dest_files=[ "res://.import/yellow_attack.mp3-59bd2b01ddb78ec4953b1e9887da810f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

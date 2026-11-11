@@ -1,0 +1,72 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Level23bg.png" type="Texture" id=1]
+[ext_resource path="res://Camera2D.gd" type="Script" id=2]
+[ext_resource path="res://MainCharacter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://HUD.tscn" type="PackedScene" id=4]
+[ext_resource path="res://RangedEnemy.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Shurkien.tscn" type="PackedScene" id=6]
+[ext_resource path="res://GreenEnemy.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Level24.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Portal.gd" type="Script" id=9]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1485.5, 66.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 22.75, 464 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 90.5, 298.5 )
+
+[node name="Level23" type="Node2D"]
+
+[node name="Level23Bg" type="Sprite" parent="."]
+position = Vector2( 1056, 320 )
+scale = Vector2( 1.26015, 1.42249 )
+texture = ExtResource( 1 )
+offset = Vector2( 31.72, 113.416 )
+
+[node name="HUD" parent="." instance=ExtResource( 4 )]
+
+[node name="MainCharacter" parent="." instance=ExtResource( 3 )]
+position = Vector2( 110, 478 )
+shuriken_scene = ExtResource( 6 )
+sword_range = 150
+sword_vertical_range = 100
+
+[node name="GreenEnemy" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1862, 501 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1494, 619 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 18.75, 483 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 960, 544 )
+current = true
+script = ExtResource( 2 )
+player_path = NodePath("../MainCharacter")
+background_path = NodePath("../Level23Bg")
+
+[node name="GreenEnemy2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 640, 480 )
+
+[node name="GreenEnemy3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1280, 480 )
+
+[node name="Portal" type="Area2D" parent="."]
+script = ExtResource( 9 )
+next_level = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
+position = Vector2( 2240, 288 )
+shape = SubResource( 3 )
+
+[connection signal="body_entered" from="Portal" to="Portal" method="_on_Portal_body_entered"]

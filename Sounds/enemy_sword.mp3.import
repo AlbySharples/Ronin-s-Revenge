@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/enemy_sword.mp3-ab665146cc787865046e3aa308808b30.mp3str"
+
+[deps]
+
+source_file="res://Sounds/enemy_sword.mp3"
+dest_files=[ "res://.import/enemy_sword.mp3-ab665146cc787865046e3aa308808b30.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

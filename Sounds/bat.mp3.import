@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bat.mp3-d4eadfb806f0a611cc66651ec10d2727.mp3str"
+
+[deps]
+
+source_file="res://Sounds/bat.mp3"
+dest_files=[ "res://.import/bat.mp3-d4eadfb806f0a611cc66651ec10d2727.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

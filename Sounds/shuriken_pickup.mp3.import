@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/shuriken_pickup.mp3-b3ba9888fe03fae4c9beb351c2060b62.mp3str"
+
+[deps]
+
+source_file="res://Sounds/shuriken_pickup.mp3"
+dest_files=[ "res://.import/shuriken_pickup.mp3-b3ba9888fe03fae4c9beb351c2060b62.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

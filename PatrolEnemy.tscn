@@ -1,0 +1,113 @@
+[gd_scene load_steps=47 format=2]
+
+[ext_resource path="res://PatrolEnemy.gd" type="Script" id=1]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Idle/Idle_01.png" type="Texture" id=2]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Idle/Idle_02.png" type="Texture" id=3]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Run/Run_03.png" type="Texture" id=4]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Attack2/Attack2_03.png" type="Texture" id=5]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Idle/Idle_04.png" type="Texture" id=6]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Take Hit/Take_Hit_01.png" type="Texture" id=7]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Idle/Idle_07.png" type="Texture" id=8]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Death/Death_05.png" type="Texture" id=9]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Run/Run_06.png" type="Texture" id=10]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Run/Run_07.png" type="Texture" id=11]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Idle/Idle_08.png" type="Texture" id=12]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Run/Run_01.png" type="Texture" id=13]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Idle/Idle_05.png" type="Texture" id=14]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Run/Run_04.png" type="Texture" id=15]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Run/Run_02.png" type="Texture" id=16]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Run/Run_05.png" type="Texture" id=17]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Idle/Idle_03.png" type="Texture" id=18]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Run/Run_08.png" type="Texture" id=19]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Idle/Idle_06.png" type="Texture" id=20]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Attack2/Attack2_04.png" type="Texture" id=21]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Fall/Fall_02.png" type="Texture" id=22]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Attack2/Attack2_01.png" type="Texture" id=23]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Take Hit/Take_Hit_04.png" type="Texture" id=24]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Attack2/Attack2_02.png" type="Texture" id=25]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Jump/Jump_02.png" type="Texture" id=26]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Death/Death_02.png" type="Texture" id=27]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Attack1/Attack1_06.png" type="Texture" id=28]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Death/Death_04.png" type="Texture" id=29]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Attack1/Attack1_03.png" type="Texture" id=30]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Jump/Jump_01.png" type="Texture" id=31]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Death/Death_03.png" type="Texture" id=32]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Attack1/Attack1_01.png" type="Texture" id=33]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Death/Death_06.png" type="Texture" id=34]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Take Hit/Take_Hit_02.png" type="Texture" id=35]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Attack1/Attack1_05.png" type="Texture" id=36]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Attack2/Attack2_05.png" type="Texture" id=37]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Death/Death_01.png" type="Texture" id=38]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Take Hit/Take_Hit_03.png" type="Texture" id=39]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Attack1/Attack1_04.png" type="Texture" id=40]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Fall/Fall_01.png" type="Texture" id=41]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Attack1/Attack1_02.png" type="Texture" id=42]
+[ext_resource path="res://Enemy1/Ronins_Revenge_Enemy_Clean_Separate_Frames/Attack2/Attack2_06.png" type="Texture" id=43]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 33 ), ExtResource( 42 ), ExtResource( 30 ), ExtResource( 40 ), ExtResource( 36 ), ExtResource( 28 ) ],
+"loop": false,
+"name": "Attack1",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 25 ), ExtResource( 5 ), ExtResource( 21 ), ExtResource( 37 ), ExtResource( 43 ) ],
+"loop": false,
+"name": "Attack2",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 38 ), ExtResource( 27 ), ExtResource( 32 ), ExtResource( 29 ), ExtResource( 9 ), ExtResource( 34 ) ],
+"loop": false,
+"name": "Death",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 41 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "Fall",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 31 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 16 ), ExtResource( 4 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "Move",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 35 ), ExtResource( 39 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "TakeHit",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 18 ), ExtResource( 6 ), ExtResource( 14 ), ExtResource( 20 ), ExtResource( 8 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 57, 88.5 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 134.5, 71.5 )
+
+[node name="Enemy1" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 4.3325, 3.4425 )
+frames = SubResource( 1 )
+animation = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -18 )
+shape = SubResource( 2 )
+
+[node name="SwordHitbox" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SwordHitbox"]
+position = Vector2( 181.5, -29.5 )
+shape = SubResource( 3 )

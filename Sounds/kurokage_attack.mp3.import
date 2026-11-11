@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/kurokage_attack.mp3-4db963fb4364a820d244d7957fffda5c.mp3str"
+
+[deps]
+
+source_file="res://Sounds/kurokage_attack.mp3"
+dest_files=[ "res://.import/kurokage_attack.mp3-4db963fb4364a820d244d7957fffda5c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

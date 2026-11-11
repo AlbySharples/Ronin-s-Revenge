@@ -1,0 +1,100 @@
+[gd_scene load_steps=43 format=2]
+
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Idle/Idle_07.png" type="Texture" id=1]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Idle/Idle_02.png" type="Texture" id=2]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Attack1/Attack1_06.png" type="Texture" id=3]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Attack1/Attack1_05.png" type="Texture" id=4]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Run/Run_03.png" type="Texture" id=5]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Idle/Idle_04.png" type="Texture" id=6]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Run/Run_04.png" type="Texture" id=7]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Idle/Idle_03.png" type="Texture" id=8]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Attack2/Attack2_01.png" type="Texture" id=9]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Idle/Idle_08.png" type="Texture" id=10]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Run/Run_06.png" type="Texture" id=11]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Run/Run_07.png" type="Texture" id=12]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Attack1/Attack1_03.png" type="Texture" id=13]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Attack1/Attack1_04.png" type="Texture" id=14]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Attack1/Attack1_02.png" type="Texture" id=15]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Idle/Idle_01.png" type="Texture" id=16]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Run/Run_01.png" type="Texture" id=17]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Attack1/Attack1_01.png" type="Texture" id=18]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Idle/Idle_06.png" type="Texture" id=19]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Run/Run_02.png" type="Texture" id=20]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Idle/Idle_05.png" type="Texture" id=21]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Run/Run_05.png" type="Texture" id=22]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Run/Run_08.png" type="Texture" id=23]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Attack2/Attack2_04.png" type="Texture" id=24]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Death/Death_02.png" type="Texture" id=25]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Death/Death_04.png" type="Texture" id=26]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Death/Death_05.png" type="Texture" id=27]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Attack2/Attack2_02.png" type="Texture" id=28]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Attack2/Attack2_05.png" type="Texture" id=29]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/TakeHit/TakeHit_01.png" type="Texture" id=30]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Attack2/Attack2_03.png" type="Texture" id=31]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/TakeHit/TakeHit_02.png" type="Texture" id=32]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/TakeHit/TakeHit_03.png" type="Texture" id=33]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/TakeHit/TakeHit_04.png" type="Texture" id=34]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Attack2/Attack2_06.png" type="Texture" id=35]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Death/Death_01.png" type="Texture" id=36]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Death/Death_03.png" type="Texture" id=37]
+[ext_resource path="res://Enemy2/GreenEnemy_Animation_Frames/Death/Death_06.png" type="Texture" id=38]
+[ext_resource path="res://PatrolEnemy.gd" type="Script" id=39]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 18 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 4 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "Attack1",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 28 ), ExtResource( 31 ), ExtResource( 24 ), ExtResource( 29 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "Attack2",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 25 ), ExtResource( 37 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 38 ) ],
+"loop": true,
+"name": "Death",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 2 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 21 ), ExtResource( 19 ), ExtResource( 1 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 20 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 22 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "Move",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 30 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ) ],
+"loop": false,
+"name": "TakeHit",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 25.5155, 43.8202 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 125.5, 60.5 )
+
+[node name="GreenEnemy" type="KinematicBody2D"]
+script = ExtResource( 39 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -7.62939e-06 )
+scale = Vector2( 3.765, 3.0025 )
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1.5, -15 )
+scale = Vector2( 1.94, 1.78 )
+shape = SubResource( 2 )
+
+[node name="SwordHitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SwordHitbox"]
+position = Vector2( 174, -10 )
+shape = SubResource( 3 )

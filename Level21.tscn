@@ -1,0 +1,109 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://MainCharacter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://level2.1 bg.png" type="Texture" id=2]
+[ext_resource path="res://Camera2D.gd" type="Script" id=3]
+[ext_resource path="res://HUD.tscn" type="PackedScene" id=4]
+[ext_resource path="res://GreenEnemy.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Shurkien.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Level22.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Portal.gd" type="Script" id=8]
+[ext_resource path="res://Banner.png" type="Texture" id=9]
+[ext_resource path="res://Cinzel/static/Cinzel-Bold.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://Banner.gd" type="Script" id=11]
+[ext_resource path="res://Level21.gd" type="Script" id=12]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1485.5, 66.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 98.5, 464 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 53, 173.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 90.5, 298.5 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 200
+font_data = ExtResource( 10 )
+
+[node name="Level21" type="Node2D"]
+script = ExtResource( 12 )
+
+[node name="Level21Bg" type="Sprite" parent="."]
+position = Vector2( 1184, 448 )
+scale = Vector2( 1.41866, 1.35016 )
+texture = ExtResource( 2 )
+
+[node name="MainCharacter" parent="." instance=ExtResource( 1 )]
+position = Vector2( 352, 128 )
+shuriken_scene = ExtResource( 6 )
+sword_range = 150
+sword_vertical_range = 100
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1477, 902 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 192, 416 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 512, 192 )
+shape = SubResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 960, 544 )
+current = true
+script = ExtResource( 3 )
+player_path = NodePath("../MainCharacter")
+background_path = NodePath("../Level21Bg")
+
+[node name="HUD" parent="." instance=ExtResource( 4 )]
+
+[node name="GreenEnemy" parent="." instance=ExtResource( 5 )]
+position = Vector2( 832, 768 )
+patrol_speed = 100.0
+chase_speed = 150.0
+attack_range = 200.0
+
+[node name="GreenEnemy2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1344, 768 )
+patrol_speed = 100.0
+chase_speed = 150.0
+attack_range = 200.0
+
+[node name="GreenEnemy3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1920, 768 )
+patrol_speed = 100.0
+chase_speed = 150.0
+attack_range = 200.0
+
+[node name="Portal" type="Area2D" parent="."]
+script = ExtResource( 8 )
+next_level = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
+position = Vector2( 2304, 608 )
+shape = SubResource( 4 )
+
+[node name="Banner" type="Sprite" parent="."]
+position = Vector2( 928, 32 )
+scale = Vector2( 0.176796, 0.205801 )
+texture = ExtResource( 9 )
+script = ExtResource( 11 )
+
+[node name="Label" type="Label" parent="Banner"]
+margin_left = -378.969
+margin_top = -136.054
+margin_right = 336.031
+margin_bottom = 134.946
+custom_fonts/font = SubResource( 5 )
+text = "Level2"
+
+[connection signal="body_entered" from="Portal" to="Portal" method="_on_Portal_body_entered"]

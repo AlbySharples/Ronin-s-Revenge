@@ -1,0 +1,87 @@
+[gd_scene load_steps=44 format=2]
+
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_02/Animation_02_01.png" type="Texture" id=1]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_04/Animation_04_02.png" type="Texture" id=2]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_02/Animation_02_02.png" type="Texture" id=3]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_02/Animation_02_03.png" type="Texture" id=4]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_02/Animation_02_04.png" type="Texture" id=5]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_03/Animation_03_02.png" type="Texture" id=6]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_02/Animation_02_06.png" type="Texture" id=7]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_02/Animation_02_05.png" type="Texture" id=8]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_02/Animation_02_07.png" type="Texture" id=9]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_03/Animation_03_01.png" type="Texture" id=10]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_03/Animation_03_04.png" type="Texture" id=11]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_03/Animation_03_05.png" type="Texture" id=12]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_04/Animation_04_01.png" type="Texture" id=13]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_03/Animation_03_03.png" type="Texture" id=14]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_04/Animation_04_06.png" type="Texture" id=15]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_04/Animation_04_08.png" type="Texture" id=16]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_04/Animation_04_07.png" type="Texture" id=17]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_04/Animation_04_03.png" type="Texture" id=18]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_04/Animation_04_05.png" type="Texture" id=19]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_04/Animation_04_04.png" type="Texture" id=20]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_06/Animation_06_05.png" type="Texture" id=21]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Sword_Attack/Sword_Attack_06.png" type="Texture" id=22]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Sword_Attack/Sword_Attack_04.png" type="Texture" id=23]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Sword_Attack/Sword_Attack_11.png" type="Texture" id=24]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Sword_Attack/Sword_Attack_02.png" type="Texture" id=25]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_06/Animation_06_01.png" type="Texture" id=26]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Sword_Attack/Sword_Attack_07.png" type="Texture" id=27]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Sword_Attack/Sword_Attack_09.png" type="Texture" id=28]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_06/Animation_06_02.png" type="Texture" id=29]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Sword_Attack/Sword_Attack_08.png" type="Texture" id=30]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Sword_Attack/Sword_Attack_10.png" type="Texture" id=31]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Sword_Attack/Sword_Attack_12.png" type="Texture" id=32]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Sword_Attack/Sword_Attack_01.png" type="Texture" id=33]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Sword_Attack/Sword_Attack_13.png" type="Texture" id=34]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_06/Animation_06_06.png" type="Texture" id=35]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Sword_Attack/Sword_Attack_05.png" type="Texture" id=36]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_06/Animation_06_03.png" type="Texture" id=37]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Animation_06/Animation_06_04.png" type="Texture" id=38]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Sword_Attack/Sword_Attack_03.png" type="Texture" id=39]
+[ext_resource path="res://Samurai_Boss_All_Individual_Frames/Samurai_Boss_128x128_Frames/Sword_Attack/Sword_Attack_14.png" type="Texture" id=40]
+[ext_resource path="res://Boss.gd" type="Script" id=41]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 33 ), ExtResource( 25 ), ExtResource( 39 ), ExtResource( 23 ), ExtResource( 36 ), ExtResource( 22 ), ExtResource( 27 ), ExtResource( 30 ), ExtResource( 28 ), ExtResource( 31 ), ExtResource( 24 ), ExtResource( 32 ), ExtResource( 34 ), ExtResource( 40 ) ],
+"loop": false,
+"name": "Attack1",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ) ],
+"loop": false,
+"name": "Dash",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 6 ), ExtResource( 14 ), ExtResource( 11 ), ExtResource( 12 ) ],
+"loop": false,
+"name": "Death",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 2 ), ExtResource( 18 ), ExtResource( 20 ), ExtResource( 19 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 29 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 21 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "Run",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 45.5, 119.5 )
+
+[node name="Boss" type="KinematicBody2D"]
+script = ExtResource( 41 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 3, -124 )
+scale = Vector2( 2.24714, 3.91042 )
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -2.5, -8.5 )
+shape = SubResource( 2 )
